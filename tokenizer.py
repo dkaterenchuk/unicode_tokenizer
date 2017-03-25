@@ -79,7 +79,7 @@ def tokenize_documents(data_folder):
     """
     document_list = []
 
-    for doc in os.listdir(data_folder)[:2]:
+    for doc in os.listdir(data_folder):
         if doc.endswith(".txt"):
             with open(data_folder + "/" + doc) as doc_obj:
                 document = doc_obj.read()
